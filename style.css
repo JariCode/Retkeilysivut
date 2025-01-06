@@ -1,0 +1,313 @@
+/*Start setup*/
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*End start setup*/
+
+/*Utility classes*/
+.nowrap {
+    white-space: nowrap;
+}
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+/*End Utility classes*/
+
+/*Body background setup*/
+body {
+    background-image: linear-gradient(to right, rgb(205, 180, 243) , aqua);
+}
+/*End body bakcground setup*/
+
+/*Start styling top container*/
+.container {
+    background-color: rgb(251, 210,156);
+    background-image: url('../Images/scenic2.jpg');
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+img {
+    display: block;
+}
+
+.me {
+    border-bottom: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.h1 {
+    font-size: 500%;
+    color:aliceblue;
+    text-shadow: 5px 5px 10px black;
+}
+
+.profile-pic-figure {
+    width: 35%;
+}
+
+.profile-pic-figure img {
+    width: 50%;
+    height: auto;
+    min-width: 100px;
+    border: 5px double gray;
+    border-radius: 50%;
+}
+/*Stop styling top container*/
+
+/*Styling H1 & H2 &H3 to videos and photos pages [videoita & kuvia sivuille)*/
+h1 {
+    text-align: center;
+    color: rgb(238, 169, 78);
+    text-shadow: 2px 2px gray;
+    margin: 5px;
+    padding: 5px;
+ 
+}
+
+h2 {
+    text-align: center;
+    color: rgb(238, 169, 78);
+    text-shadow: 2px 2px gray;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    padding: 5px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 0px;
+    color: rgb(173, 84, 19);
+    margin: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 1px;
+}
+/*End of styling H1 & H2 & H3*/
+
+/*start stylingvideos*/
+.videos {
+    text-align: center;
+    color: blueviolet;
+    break-inside: avoid;
+    cursor: pointer;
+  
+}
+
+video {
+    border: double 8px rgb(211, 233, 13);
+    border-radius: 5%;
+}
+
+
+
+figcaption {
+    text-align:center;
+    color: rgb(173, 84, 19);
+    font-size: 18px;
+    margin-bottom: 15px; 
+}
+/*End of styling videos*/
+
+/*Styling footer*/
+footer {
+    text-align: center;
+    font-size: 15px; 
+    margin-top:35px;
+    margin-bottom: 20px;
+    color: rgb(173, 84, 19);
+}
+
+.footer {
+    color: rgb(4, 39, 51);
+}
+/*End of styling footer*/
+
+/*Start making columns to video pages*/
+.columns {
+    column-count: 4;
+    break-inside: avoid;
+    break-after: avoid-column;   
+}
+/*End making columns*/
+
+/*start making media screen to video pages*/
+@media only screen and (max-width: 1300px) {
+    .columns {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+    }
+   .offscreen {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+   }
+}
+
+@media only screen and (max-width: 1100px) {
+    .columns {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+    }
+   .offscreen {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+   }
+   .h1 {
+    font-size: 50px;
+   }
+}
+
+@media only screen and (max-width: 750px) {
+    .columns {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+    }
+   .offscreen {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+   }
+   .h1 {
+    font-size: 28px;
+   }
+
+   
+}
+/*End making media screen*/
+
+/* Start making nav to front page*/
+nav {
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 25px;
+    margin-top: 15px;
+}
+
+nav ul li a {
+    text-align: center;
+    text-decoration: none;
+    border-top: 2px solid brown;
+    border-bottom: 2px solid brown;
+    border-left: 2px solid brown;
+    border-right: 2px solid brown;
+    border-radius: 8%;
+    color: aliceblue;
+    background-color: burlywood;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 15px;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+nav ul li a:hover {
+    background-color: brown;
+    color: rgb(140, 212, 25);
+}
+/*Stop styling nav*/
+
+/*Frontpage (etusivu) styling*/
+.esittelyH3 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 5px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.esittely {
+    text-align: center;
+    color: chocolate;
+    font-size: 25px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+   
+   
+}
+
+
+/*End front page styling*/
+
+/*Nav arrow setup*/
+@keyframes nuoli {
+    0% { -webkit-transform: perspective(400px) rotate(45deg);}
+    50% { -webkit-transform: perspective(400px) rotate(-45deg);}
+    100% { -webkit-transform: perspective(400px) rotate(45deg);}
+
+}
+.nuoli-alas {
+    color: aliceblue;
+    border: 2px solid blue;
+    border-radius: 50%;
+    background-color: rgb(102, 102, 70);
+    animation: nuoli 4s infinite linear; 
+    padding: 5px;
+    font-size: 50px;
+}
+
+.nuoli {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+/*End nav arrow setup*/
+
+/*Start making photos*/
+.photos {
+    text-align: center;
+    color: blueviolet;
+    break-inside: avoid;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  
+}
+
+.photospecs {
+    border: double 8px rgb(211, 233, 13);
+    border-radius: 5%;
+    
+}
+
+
+
+figcaption {
+    text-align:center;
+    color: rgb(173, 84, 19);
+    font-size: 18px;
+    margin-bottom: 15px; 
+}
+
